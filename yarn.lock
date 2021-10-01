@@ -802,9 +802,10 @@
     pluralize "^7.0.0"
     shelljs "^0.7.8"
 
-"@datorama/akita@^3.0.4":
-  version "3.0.4"
-  resolved "https://registry.yarnpkg.com/@datorama/akita/-/akita-3.0.4.tgz#130811f58ae9b904152019e4cdc2812e2cbf274c"
+"@datorama/akita@^3.18.0":
+  version "3.18.0"
+  resolved "https://registry.yarnpkg.com/@datorama/akita/-/akita-3.18.0.tgz#96c4730d0ab4888160b371d93efd49ad9b08811c"
+  integrity sha512-Ar/yNi4OIELywF++ZvRDkT9brTSpEz51+Xkopuyguw7UzTbQdQjq8Nh5gukK4FMRYtZRo0kGvKhWFgOOhWpvbA==
   dependencies:
     schematics-utilities "^1.1.1"
     tslib "^1.9.0"
