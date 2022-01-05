@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@datorama/akita": "^4.22.1",
+    "@datorama/akita": "^3.0.4",
     "@types/jest": "24.0.11",
     "@types/node": "11.11.3",
     "@types/react": "16.8.8",
@@ -11,12 +11,13 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-markdown": "^5.0.0",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "5.0.0",
+    "react-markdown": "^4.0.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.4.0",
-    "typescript": "3.3.3333"
+    "typescript": "3.3.3333",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -24,7 +25,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "tslint -c tslint.json src/**/*.{ts,tsx} && eslint src/**/*.{js,jsx}",
-    "prettier": "prettier \"**/*.{ts,tsx,scss,css,js,json,md}\" --write"
+    "prettier": "prettier \"**/*.{ts,tsx,scss,css,js,json,md}\" --write",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "husky": {
     "hooks": {
@@ -67,5 +70,6 @@
     "tslint": "^5.14.0",
     "tslint-config-react-app": "^0.0.0",
     "tslint-react": "^3.6.0"
-  }
+  },
+  "snyk": true
 }
